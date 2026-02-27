@@ -323,7 +323,7 @@ if st.session_state.initial_story:
     st.markdown("## 📝 Generated User Stories")
     st.markdown(st.session_state.initial_story)
 
-        st.markdown("### ⬇️ Download Output")
+    st.markdown("### ⬇️ Download Output")
 
     col_d1, col_d2 = st.columns([1, 3])
 
@@ -370,3 +370,4 @@ if st.session_state.chat_history:
     st.markdown("## 🗂 Follow-up History")
     for i, h in enumerate(st.session_state.chat_history, 1):
         st.markdown(f"**Follow-up {i}:** {h}")
+
