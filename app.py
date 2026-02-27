@@ -115,6 +115,22 @@ div.stButton > button:hover {
     background-color: #303f9f !important;
     color: white !important;
 }
+
+/* Download button - same as Generate */
+div[data-testid="stDownloadButton"] > button {
+    background-color: #3f51b5 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 5px !important;
+    height: 42px !important;
+    font-weight: 600 !important;
+}
+
+/* Hover effect */
+div[data-testid="stDownloadButton"] > button:hover {
+    background-color: #303f9f !important;
+    color: white !important;
+}
 </style>
 """, unsafe_allow_html=True)
  
@@ -370,4 +386,5 @@ if st.session_state.chat_history:
     st.markdown("## 🗂 Follow-up History")
     for i, h in enumerate(st.session_state.chat_history, 1):
         st.markdown(f"**Follow-up {i}:** {h}")
+
 
